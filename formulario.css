@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(130deg, #ffe53b 0%, #ff2525 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #fafafa;
+    border-radius: 6px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    width: 527px;
+    height: 650px;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 31px;
+
+    font-size: 30px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-indent: 1px;
+
+    color: #000000;
+}
+
+.form {
+    width: 314px;
+    height: 52px;
+    width: 100%;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.form-control {
+    position: relative;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.form-control label {
+    display: inline-block;
+    width: 199px;
+    height: 22px;
+    margin-bottom: 9px;
+    margin-top: 9px;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #000000;
+}
+
+.form-control input {
+    box-sizing: border-box;
+    height: 50px;
+    width: 100%;
+
+    background: #FFFFFF;
+    border-radius: 7px;
+    border: 2px solid #000000;
+    padding: 10px;
+}
+
+.form-control small {
+    display: flex;
+    position: absolute;
+    width: 200px;
+    left: 205px;
+    visibility: hidden;
+}
+
+.form button {
+    position: absolute;
+    bottom: 95px;
+    background: linear-gradient(130deg, #ffe53b, #ff2525, #ffe53b);
+    background-size: 200%;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    border: none;
+    color: #ffffff;
+    width: 326px;
+    height: 52px;
+    border-radius: 15px;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.form button:hover {
+    background-position: right;
+}
+
+.form-control.success input {
+    border-color: rgba(28, 159, 17, 1);
+}
+
+.form-control.error input {
+    border-color: rgba(220, 39, 39, 1);
+}
+
+
+.form-control.error i.fa-exclamation {
+    color: rgba(220, 39, 39, 1);
+    visibility: visible;
+}
+
+.form-control.error small {
+    visibility: visible;
+    color: rgba(220, 39, 39, 1);
+}
