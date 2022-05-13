@@ -85,10 +85,11 @@ body {
     visibility: hidden;
 }
 
-.form button {
+button {
     position: absolute;
     bottom: 95px;
     background: linear-gradient(130deg, #ffe53b, #ff2525, #ffe53b);
+    background-color: #ff2525;
     background-size: 200%;
     cursor: pointer;
     transition: .5s ease-in-out;
@@ -122,4 +123,8 @@ body {
 .form-control.error small {
     visibility: visible;
     color: rgba(220, 39, 39, 1);
+}
+
+.botao-cinza {
+    background: #9C9C9C;
 }
